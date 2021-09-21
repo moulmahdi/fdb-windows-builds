@@ -1,0 +1,276 @@
+17:13:53 Runnning command: gh pr checkout 5631
+Switched to branch 'jzhou77/master'
+17:13:54 Runnning command: git pull
+From https://github.com/jzhou77/foundationdb
+ * branch                master     -> FETCH_HEAD
+Already up to date.
+17:13:55 Commit id: 6b060daa725ff418fa95565227106fd704377fa7
+17:13:55 Runnning command: cmake -G "Visual Studio 16 2019" -A x64 -T ClangCL -DBOOST_ROOT=D:\source\boost SourceDir D:\ci\fdb-nightlies\foundationdb
+-- Selecting Windows SDK version 10.0.19041.0 to target Windows 10.0.19043.
+-- The C compiler identification is Clang 12.0.0 with MSVC-like command-line
+-- The CXX compiler identification is Clang 12.0.0 with MSVC-like command-line
+-- The ASM compiler identification is Clang
+-- Found assembler: C:/Program Files (x86)/Microsoft Visual Studio/2019/Professional/VC/Tools/Llvm/x64/bin/clang-cl.exe
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: C:/Program Files (x86)/Microsoft Visual Studio/2019/Professional/VC/Tools/Llvm/x64/bin/clang-cl.exe - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: C:/Program Files (x86)/Microsoft Visual Studio/2019/Professional/VC/Tools/Llvm/x64/bin/clang-cl.exe - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- D:/ci/fdb-nightlies/foundationdb D:/ci/fdb-nightlies/build
+-- Looking for pthread.h
+-- Looking for pthread.h - not found
+-- Found Threads: TRUE  
+-- Could NOT find OpenSSL, try to set the path to OpenSSL root folder in the system variable OPENSSL_ROOT_DIR (missing: OPENSSL_CRYPTO_LIBRARY OPENSSL_INCLUDE_DIR) 
+-- OpenSSL was not found - Will compile without TLS Support
+-- You can set OPENSSL_ROOT_DIR to help cmake find it
+-- TLS is temporarilty disabled on Windows while libressl -> openssl transition happens
+-- Found Python: C:/Program Files/Python/Python39/python.exe (found version "3.9.6") found components: Interpreter 
+-- Found JNI: C:/Program Files/RedHat/java-1.8.0-openjdk-1.8.0.292-2/lib/jawt.lib (Required is at least version "1.8") 
+-- Found Java: C:/Program Files/RedHat/java-1.8.0-openjdk-1.8.0.292-2/bin/java.exe (found suitable version "1.8.0.292", minimum required is "1.8") found components: Development 
+-- Found Python3: C:/Program Files/Python/Python39/python.exe (found version "3.9.6") found components: Interpreter 
+-- Current git version 6b060daa725ff418fa95565227106fd704377fa7
+-- FDB version is 7.1.0
+-- FDB package name is 7.1
+-- The CSharp compiler identification is Microsoft unknown 9999
+-- The CSharp compiler version is 3.11.0
+-- Check for working C# compiler: C:/Program Files (x86)/Microsoft Visual Studio/2019/Professional/MSBuild/Current/Bin/Roslyn/csc.exe
+-- Check for working C# compiler: C:/Program Files (x86)/Microsoft Visual Studio/2019/Professional/MSBuild/Current/Bin/Roslyn/csc.exe - works
+-- FDB_INSTALL_DIRS -> BIN;SBIN;LIB;FDBMONITOR;INCLUDE;ETC;LOG;DATA;BACKUPAGENT
+-- Using g++ version of boost::context
+-- Found Boost: D:/source/boost (found suitable version "1.76.0", minimum required is "1.72")  
+-- Use old fdb at C:/Program Files/foundationdb/bin/fdbserver.exe
+-- ADDING SIMULATOR TEST 0 SimpleExternalTest
+-- ADDING SIMULATOR TEST 1 StorageServerInterface
+-- ADDING SIMULATOR TEST 2 SystemData
+-- ADDING SIMULATOR TEST 3 fast/AtomicBackupCorrectness
+-- ADDING SIMULATOR TEST 4 fast/AtomicBackupToDBCorrectness
+-- ADDING SIMULATOR TEST 5 fast/AtomicOps
+-- ADDING SIMULATOR TEST 6 fast/AtomicOpsApiCorrectness
+-- ADDING SIMULATOR TEST 7 fast/BackupCorrectness
+-- ADDING SIMULATOR TEST 8 fast/BackupCorrectnessClean
+-- ADDING SIMULATOR TEST 9 fast/BackupToDBCorrectness
+-- ADDING SIMULATOR TEST 10 fast/BackupToDBCorrectnessClean
+-- ADDING SIMULATOR TEST 11 fast/CacheTest
+-- ADDING SIMULATOR TEST 12 fast/CloggedSideband
+-- ADDING SIMULATOR TEST 13 fast/ConfigureLocked
+-- ADDING SIMULATOR TEST 14 fast/ConstrainedRandomSelector
+-- ADDING SIMULATOR TEST 15 fast/CycleAndLock
+-- ADDING SIMULATOR TEST 16 fast/CycleTest
+-- ADDING SIMULATOR TEST 17 fast/FuzzApiCorrectness
+-- ADDING SIMULATOR TEST 18 fast/FuzzApiCorrectnessClean
+-- ADDING SIMULATOR TEST 19 fast/IncrementalBackup
+-- ADDING SIMULATOR TEST 20 fast/IncrementTest
+-- ADDING SIMULATOR TEST 21 fast/InventoryTestAlmostReadOnly
+-- ADDING SIMULATOR TEST 22 fast/InventoryTestSomeWrites
+-- ADDING SIMULATOR TEST 23 fast/KillRegionCycle
+-- ADDING SIMULATOR TEST 24 fast/LocalRatekeeper
+-- ADDING SIMULATOR TEST 25 fast/LongStackWriteDuringRead
+-- ADDING SIMULATOR TEST 26 fast/LowLatency
+-- ADDING SIMULATOR TEST 27 fast/MemoryLifetime
+-- ADDING SIMULATOR TEST 28 fast/MoveKeysCycle
+-- ADDING SIMULATOR TEST 29 fast/MutationLogReaderCorrectness
+-- ADDING SIMULATOR TEST 30 fast/ProtocolVersion
+-- ADDING SIMULATOR TEST 31 fast/RandomSelector
+-- ADDING SIMULATOR TEST 32 fast/RandomUnitTests
+-- ADDING SIMULATOR TEST 33 fast/ReportConflictingKeys
+-- ADDING SIMULATOR TEST 34 fast/SelectorCorrectness
+-- ADDING SIMULATOR TEST 35 fast/Sideband
+-- ADDING SIMULATOR TEST 36 fast/SidebandWithStatus
+-- ADDING SIMULATOR TEST 37 fast/SimpleAtomicAdd
+-- ADDING SIMULATOR TEST 38 fast/SpecialKeySpaceCorrectness
+-- ADDING SIMULATOR TEST 39 fast/StreamingRangeRead
+-- ADDING SIMULATOR TEST 40 fast/SwizzledRollbackSideband
+-- ADDING SIMULATOR TEST 41 fast/SystemRebootTestCycle
+-- ADDING SIMULATOR TEST 42 fast/TaskBucketCorrectness
+-- ADDING SIMULATOR TEST 43 fast/TimeKeeperCorrectness
+-- ADDING SIMULATOR TEST 44 fast/TxnStateStoreCycleTest
+-- ADDING SIMULATOR TEST 45 fast/UDP
+-- ADDING SIMULATOR TEST 46 fast/Unreadable
+-- ADDING SIMULATOR TEST 47 fast/VersionStamp
+-- ADDING SIMULATOR TEST 48 fast/Watches
+-- ADDING SIMULATOR TEST 49 fast/WriteDuringRead
+-- ADDING SIMULATOR TEST 50 fast/WriteDuringReadClean
+-- ADDING UNIT TEST 51 noSim/RandomUnitTests
+-- ADDING SIMULATOR TEST 52 rare/CheckRelocation
+-- ADDING SIMULATOR TEST 53 rare/ClogUnclog
+-- ADDING SIMULATOR TEST 54 rare/CloggedCycleWithKills
+-- ADDING SIMULATOR TEST 55 rare/ConfigIncrement
+-- ADDING SIMULATOR TEST 56 rare/ConflictRangeCheck
+-- ADDING SIMULATOR TEST 57 rare/ConflictRangeRYOWCheck
+-- ADDING SIMULATOR TEST 58 rare/CycleRollbackClogged
+-- ADDING SIMULATOR TEST 59 rare/CycleWithKills
+-- ADDING SIMULATOR TEST 60 rare/Downgrade
+-- ADDING SIMULATOR TEST 61 rare/FuzzTest
+-- ADDING SIMULATOR TEST 62 rare/InventoryTestHeavyWrites
+-- ADDING SIMULATOR TEST 63 rare/LargeApiCorrectness
+-- ADDING SIMULATOR TEST 64 rare/LargeApiCorrectnessStatus
+-- ADDING SIMULATOR TEST 65 rare/RYWDisable
+-- ADDING SIMULATOR TEST 66 rare/RandomReadWriteTest
+-- ADDING SIMULATOR TEST 67 rare/SpecificUnitTests
+-- ADDING SIMULATOR TEST 68 rare/SwizzledLargeApiCorrectness
+-- ADDING SIMULATOR TEST 69 rare/RedwoodCorrectnessBTree
+-- ADDING SIMULATOR TEST 70 rare/Throttling
+-- ADDING SIMULATOR TEST 71 rare/TransactionTagApiCorrectness
+-- ADDING SIMULATOR TEST 72 rare/TransactionTagSwizzledApiCorrectness
+-- ADDING SIMULATOR TEST 73 rare/WriteTagThrottling
+-- ADDING SIMULATOR TEST 74 restarting/from_7.0.0/SnapIncrementalRestore-1
+-- ADDING SIMULATOR TEST 76 restarting/from_7.0.0/ConfigureTestRestart-1
+-- ADDING SIMULATOR TEST 78 restarting/from_5.0.0_until_6.3.0/CycleTestRestart-1
+-- ADDING SIMULATOR TEST 80 restarting/from_5.0.0_until_6.3.0/StorefrontTestRestart-1
+-- ADDING SIMULATOR TEST 82 restarting/from_6.2.33_until_6.3.0/SnapTestAttrition-1
+-- ADDING SIMULATOR TEST 84 restarting/from_6.2.33_until_6.3.0/SnapTestSimpleRestart-1
+-- ADDING SIMULATOR TEST 86 restarting/from_6.2.33_until_6.3.0/SnapTestRestart-1
+-- ADDING SIMULATOR TEST 88 restarting/from_6.2.33_until_6.3.0/SnapCycleRestart-1
+-- ADDING SIMULATOR TEST 90 restarting/from_5.1.7_until_6.3.0/DrUpgradeRestart-1
+-- ADDING SIMULATOR TEST 92 restarting/from_5.2.0_until_6.3.0/ClientTransactionProfilingCorrectness-1
+-- ADDING SIMULATOR TEST 94 restarting/from_6.3.13/ClientTransactionProfilingCorrectness-1
+-- ADDING SIMULATOR TEST 96 restarting/from_6.3.13/CycleTestRestart-1
+-- ADDING SIMULATOR TEST 98 restarting/from_6.3.13/DrUpgradeRestart-1
+-- ADDING SIMULATOR TEST 100 restarting/from_6.3.13/SnapCycleRestart-1
+-- ADDING SIMULATOR TEST 102 restarting/from_6.3.13/SnapTestAttrition-1
+-- ADDING SIMULATOR TEST 104 restarting/from_6.3.13/SnapTestRestart-1
+-- ADDING SIMULATOR TEST 106 restarting/from_6.3.13/SnapTestSimpleRestart-1
+-- ADDING SIMULATOR TEST 108 restarting/from_6.3.13/StorefrontTestRestart-1
+-- ADDING SIMULATOR TEST 110 restarting/from_7.0.0/UpgradeAndBackupRestore-1
+-- ADDING SIMULATOR TEST 112 restarting/to_7.0.0/CycleTestRestart-1
+-- ADDING SIMULATOR TEST 114 slow/ApiCorrectness
+-- ADDING SIMULATOR TEST 115 slow/ApiCorrectnessAtomicRestore
+-- ADDING SIMULATOR TEST 116 slow/ApiCorrectnessSwitchover
+-- ADDING SIMULATOR TEST 117 slow/ClogWithRollbacks
+-- ADDING SIMULATOR TEST 118 slow/CloggedCycleTest
+-- ADDING SIMULATOR TEST 119 slow/CloggedStorefront
+-- ADDING SIMULATOR TEST 120 slow/CommitBug
+-- ADDING SIMULATOR TEST 121 slow/ConfigureTest
+-- ADDING SIMULATOR TEST 122 slow/CycleRollbackPlain
+-- ADDING SIMULATOR TEST 123 slow/DDBalanceAndRemove
+-- ADDING SIMULATOR TEST 124 slow/DDBalanceAndRemoveStatus
+-- ADDING SIMULATOR TEST 125 slow/DifferentClustersSameRV
+-- ADDING SIMULATOR TEST 126 slow/FastTriggeredWatches
+-- ADDING SIMULATOR TEST 127 slow/LowLatencyWithFailures
+-- ADDING SIMULATOR TEST 128 slow/MoveKeysClean
+-- ADDING SIMULATOR TEST 129 slow/MoveKeysSideband
+-- ADDING SIMULATOR TEST 130 slow/RyowCorrectness
+-- ADDING SIMULATOR TEST 131 slow/Serializability
+-- ADDING SIMULATOR TEST 132 slow/SharedBackupCorrectness
+-- ADDING SIMULATOR TEST 133 slow/SharedBackupToDBCorrectness
+-- ADDING SIMULATOR TEST 134 slow/StorefrontTest
+-- ADDING SIMULATOR TEST 135 slow/SwizzledApiCorrectness
+-- ADDING SIMULATOR TEST 136 slow/SwizzledCycleTest
+-- ADDING SIMULATOR TEST 137 slow/SwizzledDdBalance
+-- ADDING SIMULATOR TEST 138 slow/SwizzledRollbackTimeLapse
+-- ADDING SIMULATOR TEST 139 slow/SwizzledRollbackTimeLapseIncrement
+-- ADDING SIMULATOR TEST 140 slow/VersionStampBackupToDB
+-- ADDING SIMULATOR TEST 141 slow/VersionStampSwitchover
+-- ADDING SIMULATOR TEST 142 slow/WriteDuringReadAtomicRestore
+-- ADDING SIMULATOR TEST 143 slow/WriteDuringReadSwitchover
+-- ADDING SIMULATOR TEST 144 slow/ddbalance
+-- ADDING SIMULATOR TEST 145 slow/ParallelRestoreNewBackupCorrectnessAtomicOp
+-- ADDING SIMULATOR TEST 146 slow/ParallelRestoreNewBackupCorrectnessCycle
+-- ADDING SIMULATOR TEST 147 slow/ParallelRestoreNewBackupCorrectnessMultiCycles
+-- ADDING SIMULATOR TEST 148 slow/ParallelRestoreNewBackupWriteDuringReadAtomicRestore
+-- ADDING SIMULATOR TEST 149 slow/ParallelRestoreOldBackupCorrectnessAtomicOp
+-- ADDING SIMULATOR TEST 150 slow/ParallelRestoreOldBackupCorrectnessCycle
+-- ADDING SIMULATOR TEST 151 slow/ParallelRestoreOldBackupCorrectnessMultiCycles
+-- ADDING SIMULATOR TEST 152 slow/ParallelRestoreOldBackupWriteDuringReadAtomicRestore
+-- ADDING SIMULATOR TEST 153 status/invalid_proc_addresses
+-- ADDING SIMULATOR TEST 154 status/local_6_machine_no_replicas_remain
+-- ADDING SIMULATOR TEST 155 status/separate_1_of_3_coordinators_remain
+-- ADDING SIMULATOR TEST 156 status/separate_2_of_3_coordinators_remain
+-- ADDING SIMULATOR TEST 157 status/separate_cannot_write_cluster_file
+-- ADDING SIMULATOR TEST 158 status/separate_idle
+-- ADDING SIMULATOR TEST 159 status/separate_initializing
+-- ADDING SIMULATOR TEST 160 status/separate_no_coordinators
+-- ADDING SIMULATOR TEST 161 status/separate_no_database
+-- ADDING SIMULATOR TEST 162 status/separate_no_servers
+-- ADDING SIMULATOR TEST 163 status/separate_not_enough_servers
+-- ADDING SIMULATOR TEST 164 status/single_process_too_many_config_params
+-- Selecting Windows SDK version 10.0.19041.0 to target Windows 10.0.19043.
+CMake Warning (dev) in CMakeLists.txt:
+  No cmake_minimum_required command is present.  A line of code such as
+
+    cmake_minimum_required(VERSION 3.21)
+
+  should be added at the top of the file.  The version specified may be lower
+  if you wish to support older CMake versions for this project.  For more
+  information run "cmake --help-policy CMP0000".
+-- Configuring done
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+-- Generating done
+-- Build files have been written to: D:/ci/fdb-nightlies/build/flowbench/googlebenchmark-download
+Microsoft (R) Build Engine version 16.11.0+0538acc04 for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+  Checking Build System
+  Creating directories for 'googlebenchmark'
+  Building Custom Rule D:/ci/fdb-nightlies/build/flowbench/googlebenchmark-download/CMakeLists.txt
+  Performing download step (git clone) for 'googlebenchmark'
+  Cloning into 'googlebenchmark-src'...
+  HEAD is now at 8039b40 Upgrade bazel from 0.10.1 to 3.2.0 (#976)
+  Performing update step for 'googlebenchmark'
+  No patch step for 'googlebenchmark'
+  No configure step for 'googlebenchmark'
+  No build step for 'googlebenchmark'
+  No install step for 'googlebenchmark'
+  No test step for 'googlebenchmark'
+  Completed 'googlebenchmark'
+  Creating directories for 'googletest'
+  Building Custom Rule D:/ci/fdb-nightlies/build/flowbench/googlebenchmark-download/CMakeLists.txt
+  Performing download step (git clone) for 'googletest'
+  Cloning into 'googletest'...
+  HEAD is now at 2fe3bd99 Merge pull request #1433 from dsacre/fix-clang-warnings
+  Performing update step for 'googletest'
+  No patch step for 'googletest'
+  No configure step for 'googletest'
+  No build step for 'googletest'
+  No install step for 'googletest'
+  No test step for 'googletest'
+  Completed 'googletest'
+  Building Custom Rule D:/ci/fdb-nightlies/build/flowbench/googlebenchmark-download/CMakeLists.txt
+-- Found Git: C:/Program Files/Git/cmd/git.exe (found version "2.32.0.windows.2") 
+-- git Version: v1.5.1
+-- Version: 1.5.1
+-- Performing Test HAVE_STD_REGEX
+-- Performing Test HAVE_STD_REGEX
+-- Performing Test HAVE_STD_REGEX -- success
+-- Performing Test HAVE_GNU_POSIX_REGEX
+-- Performing Test HAVE_GNU_POSIX_REGEX
+-- Performing Test HAVE_GNU_POSIX_REGEX -- failed to compile
+-- Performing Test HAVE_POSIX_REGEX
+-- Performing Test HAVE_POSIX_REGEX
+-- Performing Test HAVE_POSIX_REGEX -- failed to compile
+-- Performing Test HAVE_STEADY_CLOCK
+-- Performing Test HAVE_STEADY_CLOCK
+-- Performing Test HAVE_STEADY_CLOCK -- success
+-- The ASM_MASM compiler identification is unknown
+-- Found assembler: ml64
+-- Building fat jar to D:/ci/fdb-nightlies/build/packages
+-- Add html target
+-- add_custom_target(html DEPENDS D:/ci/fdb-nightlies/build/documentation/html_done)
+-- math(EXPRport(0x572578c0d838024 % 8000) + 8000OUTPUT_FORMATDECIMAL)
+-- Port is 14244
+-- Found WIX: C:/Program Files (x86)/WiX Toolset v3.11/bin/candle.exe  
+-- =========================================
+--    Components Build Overview 
+-- =========================================
+-- Build Bindings (depends on Python):   ON
+-- Build C Bindings:                     ON
+-- Build Python Bindings:                ON
+-- Build Java Bindings:                  ON
+-- Build Go bindings:                    OFF
+-- Build Ruby bindings:                  OFF
+-- Build with TLS support:               OFF
+-- Build Documentation (make html):      ON
+-- Build Python sdist (make package):    ON
+-- Configure CTest (depends on Python):  ON
+-- Build with RocksDB:                   OFF
+-- =========================================
+-- CPACK_COMPONENTS_ALL 
+-- Configuring done
+-- Generating done
+-- Build files have been written to: D:/ci/fdb-nightlies/build
