@@ -1,69 +1,10 @@
-12:32:01 Runnning command: git switch master
+12:44:19 Runnning command: git switch master
 Your branch is up to date with 'origin/master'.
-Switched to branch 'master'
-12:32:01 Runnning command: git pull
-From https://github.com/apple/foundationdb
-   cc72c5e23..40c6fbcc1  master      -> origin/master
-   0c937c462..351c2e24e  release-7.0 -> origin/release-7.0
-Updating cc72c5e23..40c6fbcc1
-Fast-forward
- .gitignore                                         |   2 +-
- bindings/CMakeLists.txt                            |   2 +-
- bindings/c/CMakeLists.txt                          |   9 +-
- documentation/sphinx/source/cap-theorem.rst        |   4 +-
- .../sphinx/source/command-line-interface.rst       |   3 +-
- documentation/sphinx/source/ha-write-path.rst      |   2 +-
- documentation/sphinx/source/performance.rst        |   8 +-
- documentation/sphinx/source/read-write-path.rst    |   6 +-
- documentation/tutorial/tutorial.actor.cpp          |  17 +-
- fdbcli/CMakeLists.txt                              |   2 +
- fdbcli/ConfigureCommand.actor.cpp                  | 297 ++++++++++++++
- fdbcli/FileConfigureCommand.actor.cpp              | 181 +++++++++
- fdbcli/TriggerDDTeamInfoLogCommand.actor.cpp       |   4 +-
- fdbcli/fdbcli.actor.cpp                            | 414 +------------------
- fdbcli/fdbcli.actor.h                              |  16 +-
- fdbclient/CMakeLists.txt                           |   5 +-
- fdbclient/ConfigTransactionInterface.cpp           |   9 +-
- fdbclient/CoordinationInterface.h                  |  15 +-
- fdbclient/FileBackupAgent.actor.cpp                |   2 +-
- fdbclient/ManagementAPI.actor.cpp                  | 369 -----------------
- fdbclient/ManagementAPI.actor.h                    | 442 ++++++++++++++++++++-
- fdbclient/MonitorLeader.actor.cpp                  |   6 +-
- fdbclient/NativeAPI.actor.cpp                      |   6 +-
- fdbclient/ProcessInterface.h                       |   3 +-
- fdbclient/SpecialKeySpace.actor.cpp                |   2 +-
- fdbclient/StatusClient.actor.cpp                   |   4 +-
- fdbclient/WellKnownEndpoints.h                     |  54 +++
- fdbrpc/FlowTransport.actor.cpp                     |  36 +-
- fdbrpc/FlowTransport.h                             |  12 +-
- fdbrpc/fdbrpc.h                                    |   5 +-
- fdbrpc/simulator.h                                 |   2 +
- fdbserver/ConfigDatabaseUnitTests.actor.cpp        | 120 ++++++
- fdbserver/ConfigFollowerInterface.cpp              |   8 +-
- fdbserver/ConfigFollowerInterface.h                |  39 +-
- fdbserver/ConfigNode.actor.cpp                     | 110 ++++-
- fdbserver/Coordination.actor.cpp                   |  11 +-
- fdbserver/CoordinationInterface.h                  |  13 +-
- fdbserver/DataDistribution.actor.cpp               |  53 ++-
- fdbserver/QuietDatabase.actor.cpp                  |  22 +-
- fdbserver/SimulatedCluster.actor.cpp               |  29 +-
- fdbserver/fdbserver.actor.cpp                      |   3 +-
- fdbserver/networktest.actor.cpp                    |   5 +-
- .../BackupAndParallelRestoreCorrectness.actor.cpp  |   2 +-
- fdbserver/workloads/ChangeConfig.actor.cpp         |  10 +-
- fdbserver/workloads/ConfigureDatabase.actor.cpp    |  70 +++-
- fdbserver/workloads/KillRegion.actor.cpp           |  11 +-
- fdbserver/workloads/ProtocolVersion.actor.cpp      |   4 +-
- fdbserver/workloads/TriggerRecovery.actor.cpp      |   2 +-
- tests/CMakeLists.txt                               |   1 +
- tests/slow/ConfigureStorageMigrationTest.toml      |  20 +
- 50 files changed, 1519 insertions(+), 953 deletions(-)
- create mode 100644 fdbcli/ConfigureCommand.actor.cpp
- create mode 100644 fdbcli/FileConfigureCommand.actor.cpp
- create mode 100644 fdbclient/WellKnownEndpoints.h
- create mode 100644 tests/slow/ConfigureStorageMigrationTest.toml
-12:32:03 Commit id: 40c6fbcc167c0f582417260558a2c7ea47263f9a
-12:32:03 Runnning command: cmake -G "Visual Studio 16 2019" -A x64 -T ClangCL -DBOOST_ROOT=D:\source\boost SourceDir D:\ci\fdb-nightlies\foundationdb
+Already on 'master'
+12:44:19 Runnning command: git pull
+Already up to date.
+12:44:20 Commit id: 40c6fbcc167c0f582417260558a2c7ea47263f9a
+12:44:20 Runnning command: cmake -G "Visual Studio 16 2019" -A x64 -T ClangCL -DBOOST_ROOT=D:\source\boost SourceDir D:\ci\fdb-nightlies\foundationdb
 -- Selecting Windows SDK version 10.0.19041.0 to target Windows 10.0.19043.
 -- The C compiler identification is Clang 12.0.0 with MSVC-like command-line
 -- The CXX compiler identification is Clang 12.0.0 with MSVC-like command-line
@@ -255,9 +196,9 @@ CMake Warning (dev) in CMakeLists.txt:
     cmake_minimum_required(VERSION 3.21)
 
   should be added at the top of the file.  The version specified may be lower
--- Configuring done
   if you wish to support older CMake versions for this project.  For more
   information run "cmake --help-policy CMP0000".
+-- Configuring done
 This warning is for project developers.  Use -Wno-dev to suppress it.
 
 -- Generating done

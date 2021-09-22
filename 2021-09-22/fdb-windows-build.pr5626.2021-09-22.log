@@ -1,11 +1,11 @@
-12:33:08 Runnning command: gh pr checkout 5626
+12:49:03 Runnning command: gh pr checkout 5626
 Switched to branch 'bugfixes/valgrind-dd-failure'
-12:33:10 Runnning command: git pull
+12:49:05 Runnning command: git pull
 From https://github.com/sfc-gh-mpilman/foundationdb
  * branch                bugfixes/valgrind-dd-failure -> FETCH_HEAD
 Already up to date.
-12:33:11 Commit id: b25ff73c5a8e0e0fbf1b82f50f8cd63dbd743293
-12:33:11 Runnning command: cmake -G "Visual Studio 16 2019" -A x64 -T ClangCL -DBOOST_ROOT=D:\source\boost SourceDir D:\ci\fdb-nightlies\foundationdb
+12:49:06 Commit id: b25ff73c5a8e0e0fbf1b82f50f8cd63dbd743293
+12:49:06 Runnning command: cmake -G "Visual Studio 16 2019" -A x64 -T ClangCL -DBOOST_ROOT=D:\source\boost SourceDir D:\ci\fdb-nightlies\foundationdb
 -- Selecting Windows SDK version 10.0.19041.0 to target Windows 10.0.19043.
 -- The C compiler identification is Clang 12.0.0 with MSVC-like command-line
 -- The CXX compiler identification is Clang 12.0.0 with MSVC-like command-line

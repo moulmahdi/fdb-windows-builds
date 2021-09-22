@@ -1,33 +1,10 @@
-12:32:22 Runnning command: git switch release-7.0
-Your branch is behind 'origin/release-7.0' by 16 commits, and can be fast-forwarded.
-  (use "git pull" to update your local branch)
+12:44:36 Runnning command: git switch release-7.0
+Your branch is up to date with 'origin/release-7.0'.
 Switched to branch 'release-7.0'
-12:32:22 Runnning command: git pull
-Updating 0c937c462..351c2e24e
-Fast-forward
- .gitignore                                         |   5 +-
- bindings/c/CMakeLists.txt                          |   7 +-
- .../source/release-notes/release-notes-630.rst     |   3 +-
- .../source/release-notes/release-notes-700.rst     |   1 +
- fdbcli/fdbcli.actor.cpp                            |  21 ++-
- fdbclient/ManagementAPI.actor.cpp                  |  10 +-
- fdbclient/ManagementAPI.actor.h                    |   2 +-
- fdbclient/MultiVersionTransaction.actor.cpp        | 150 ++++++++++++++++-----
- fdbclient/MultiVersionTransaction.h                |  25 ++++
- fdbrpc/simulator.h                                 |   2 +
- fdbserver/DataDistribution.actor.cpp               |  63 ++++++---
- fdbserver/QuietDatabase.actor.cpp                  |   5 +-
- fdbserver/SimulatedCluster.actor.cpp               |  24 +++-
- fdbserver/TesterInterface.actor.h                  |   1 +
- fdbserver/tester.actor.cpp                         |   4 +-
- fdbserver/workloads/ConfigureDatabase.actor.cpp    |  67 ++++++++-
- flow/ThreadHelper.actor.h                          |  13 +-
- tests/CMakeLists.txt                               |   1 +
- tests/slow/ConfigureStorageMigrationTest.toml      |  19 +++
- 19 files changed, 338 insertions(+), 85 deletions(-)
- create mode 100644 tests/slow/ConfigureStorageMigrationTest.toml
-12:32:23 Commit id: 351c2e24ed3e6424f8927c20b596945709556812
-12:32:23 Runnning command: cmake -G "Visual Studio 16 2019" -A x64 -T ClangCL -DBOOST_ROOT=D:\source\boost SourceDir D:\ci\fdb-nightlies\foundationdb
+12:44:37 Runnning command: git pull
+Already up to date.
+12:44:37 Commit id: 351c2e24ed3e6424f8927c20b596945709556812
+12:44:37 Runnning command: cmake -G "Visual Studio 16 2019" -A x64 -T ClangCL -DBOOST_ROOT=D:\source\boost SourceDir D:\ci\fdb-nightlies\foundationdb
 -- Selecting Windows SDK version 10.0.19041.0 to target Windows 10.0.19043.
 -- The C compiler identification is Clang 12.0.0 with MSVC-like command-line
 -- The CXX compiler identification is Clang 12.0.0 with MSVC-like command-line

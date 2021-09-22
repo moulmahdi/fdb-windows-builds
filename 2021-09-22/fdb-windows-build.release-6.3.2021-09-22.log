@@ -1,10 +1,10 @@
-12:32:39 Runnning command: git switch release-6.3
-Switched to branch 'release-6.3'
+12:44:53 Runnning command: git switch release-6.3
 Your branch is up to date with 'origin/release-6.3'.
-12:32:39 Runnning command: git pull
+Switched to branch 'release-6.3'
+12:44:53 Runnning command: git pull
 Already up to date.
-12:32:40 Commit id: 482b3cd5a69a186716cfa3c73d577540fae5886c
-12:32:40 Runnning command: cmake -G "Visual Studio 16 2019" -A x64 -T ClangCL -DBOOST_ROOT=D:\source\boost SourceDir D:\ci\fdb-nightlies\foundationdb
+12:44:54 Commit id: 482b3cd5a69a186716cfa3c73d577540fae5886c
+12:44:54 Runnning command: cmake -G "Visual Studio 16 2019" -A x64 -T ClangCL -DBOOST_ROOT=D:\source\boost SourceDir D:\ci\fdb-nightlies\foundationdb
 -- Selecting Windows SDK version 10.0.19041.0 to target Windows 10.0.19043.
 -- The C compiler identification is Clang 12.0.0 with MSVC-like command-line
 -- The CXX compiler identification is Clang 12.0.0 with MSVC-like command-line
