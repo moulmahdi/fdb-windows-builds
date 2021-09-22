@@ -1,0 +1,4 @@
+12:33:50 Runnning command: gh pr checkout 5614
+From https://github.com/apple/foundationdb
+ ! [rejected]            refs/pull/5614/head -> release-7.0  (non-fast-forward)
+exit status 1
